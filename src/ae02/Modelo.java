@@ -20,6 +20,10 @@ public class Modelo {
 		fichero_escritura = ".\\src\\ae02\\fichero_escritura.txt";
 	}
 
+
+	//Nombre metodo: contenidoFichero
+	//Parametro de entrada: Ninguno
+	//Parametro de salida: String
 	public String contenidoFichero(){
 		String valor = "";
 		try {
@@ -41,13 +45,24 @@ public class Modelo {
 		return valor;
 	}
 
+	//Nombre metodo: ficheroEscritura
+	//Parametro de entrada: Ninguno
+	//Parametro de salida: String
 	public String ficheroEscritura() {
 		return fichero_escritura;
 	}
+
+	//Nombre metodo: ficheroLectura
+	//Parametro de entrada: Ninguno
+	//Parametro de salida: String
 	public String ficheroLectura() {
 		return fichero_lectura;
 	}
 
+
+	//Nombre metodo: buscarPalabras
+	//Parametro de entrada: String palabra
+	//Parametro de salida: void
 	public void buscarPalabras(String palabra){
 		int contarPalabras =0;
 		int contar = 0;
@@ -68,19 +83,23 @@ public class Modelo {
 
 	}
 
+
+	//Nombre metodo: reemplazarPalabras
+	//Parametro de entrada: String palabra, textoBuscar, texto
+	//Parametro de salida: String
 	public String reemplazarPalabras(String palabra, String textoBuscar, String texto) {
 		String reemplazar = "";
 		reemplazar = texto.replaceAll(textoBuscar, palabra);
 		try {
-			
+
 			File ruta = new File(fichero_escritura);
 			ruta.createNewFile();
-			
+
 			BufferedWriter bw = new BufferedWriter(new FileWriter(ruta));
 
-			
+
 			bw.write(reemplazar);	
-			
+
 			bw.close();
 
 

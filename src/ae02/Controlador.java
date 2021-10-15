@@ -24,30 +24,32 @@ public class Controlador {
 	}
 
 
-
+	//Nombre metodo: initEventHandlers
+	//Parametro de entrada: Ninguno
+	//Parametro de salida: void
 	public void initEventHandlers() {
 
-		
-		 vista.getTextAreaOriginal().setText(modelo.contenidoFichero());
-		 
 
-			actionListenerBoton1 = new ActionListener() {
-					public void actionPerformed(ActionEvent actionEvent) {
-				    modelo.buscarPalabras(vista.getTextFieldBuscar().getText());
-				}
-			};
-			vista.getBtnBuscar().addActionListener(actionListenerBoton1);
-			
-			actionListenerBoton2 = new ActionListener() {
-				public void actionPerformed(ActionEvent actionEvent) {
-					palabraReemplazar = vista.getTextFieldReemplazar().getText();
-					buscarPalabra = vista.getTextFieldBuscar().getText();
-					String modificado =modelo.reemplazarPalabras(palabraReemplazar, buscarPalabra, vista.getTextAreaOriginal().getText());
-					vista.getTextAreaModificado().setText("" + modificado);;
-					
-				}
-			};
-			vista.getBtnReemplazar().addActionListener(actionListenerBoton2);
+		vista.getTextAreaOriginal().setText(modelo.contenidoFichero());
+
+
+		actionListenerBoton1 = new ActionListener() {
+			public void actionPerformed(ActionEvent actionEvent) {
+				modelo.buscarPalabras(vista.getTextFieldBuscar().getText());
+			}
+		};
+		vista.getBtnBuscar().addActionListener(actionListenerBoton1);
+
+		actionListenerBoton2 = new ActionListener() {
+			public void actionPerformed(ActionEvent actionEvent) {
+				palabraReemplazar = vista.getTextFieldReemplazar().getText();
+				buscarPalabra = vista.getTextFieldBuscar().getText();
+				String modificado =modelo.reemplazarPalabras(palabraReemplazar, buscarPalabra, vista.getTextAreaOriginal().getText());
+				vista.getTextAreaModificado().setText("" + modificado);;
+
+			}
+		};
+		vista.getBtnReemplazar().addActionListener(actionListenerBoton2);
 	}
 
 }
