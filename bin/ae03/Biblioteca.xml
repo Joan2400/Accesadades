@@ -28,4 +28,11 @@
         <editorial>Grijalbo</editorial>
         <numpaginas>478</numpaginas>
     </libro>
+    <libro identificador="5">
+        <titulo>Sinsajo</titulo>
+        <autor>J.K Rowling</autor>
+        <anyo>2014</anyo>
+        <editorial>Salamandra</editorial>
+        <numpaginas>350</numpaginas>
+    </libro>
 </Biblioteca>

@@ -281,6 +281,12 @@ public class Biblioteca {
 				identificador = sc.nextInt();
 				borrarLlibre(identificador);
 				break;
+			case 6 :
+				
+				break;
+				
+			default:
+				System.out.println("Error. Ponga el numero del 1 al 6");
 			}
 
 
