@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<Biblioteca>
+    <libro identificador="1">
+        <titulo>80 dias</titulo>
+        <autor>Franz Kafka</autor>
+        <anyo>1978</anyo>
+        <editorial>Circulo Rojo</editorial>
+        <numpaginas>123</numpaginas>
+    </libro>
+    <libro identificador="2">
+        <titulo>Conversion en la catedral</titulo>
+        <autor> Miguel Cervantes</autor>
+        <anyo>1968</anyo>
+        <editorial>Salamandra</editorial>
+        <numpaginas>345</numpaginas>
+    </libro>
+    <libro identificador="3">
+        <titulo>Don quijote</titulo>
+        <autor> Miguel Cervantes</autor>
+        <anyo>1968</anyo>
+        <editorial>Salamandra</editorial>
+        <numpaginas>349</numpaginas>
+    </libro>
+    <libro identificador="4">
+        <titulo>Romancero gitano</titulo>
+        <autor>Federico Garcia Lorca</autor>
+        <anyo>1928</anyo>
+        <editorial>Grijalbo</editorial>
+        <numpaginas>478</numpaginas>
+    </libro>
+    <libro identificador="5">
+        <titulo>Sinsajo</titulo>
+        <autor>J.K Rowling</autor>
+        <anyo>2014</anyo>
+        <editorial>Salamandra</editorial>
+        <numpaginas>350</numpaginas>
+    </libro>
+</Biblioteca>
